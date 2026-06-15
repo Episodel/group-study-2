@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Методична картка фасилітатора: Групове дослідження</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            900: '#0c4a6e',
+                        },
+                        accent: {
+                            50: '#f0fdf4',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght=300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .step-active {
+            border-color: #0284c7;
+            background-color: #f0f9ff;
+            color: #0c4a6e;
+        }
+        .viz-active {
+            border-color: #0284c7;
+            background-color: #f0f9ff;
+            color: #0c4a6e;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col antialiased">
+
+    <!-- Header Navigation -->
+    <header class="bg-brand-900 text-white shadow-md py-6 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <div>
+                <span class="text-xs font-semibold tracking-wider uppercase text-brand-100 bg-brand-700/50 px-2.5 py-1 rounded">Методичний інструментарій</span>
+                <h1 class="text-2xl sm:text-3xl font-bold mt-2">Групове Дослідження</h1>
+                <p class="text-brand-100 text-sm mt-1">Методична картка та покроковий гайд для фасилітаторів групової роботи</p>
+            </div>
+            <button onclick="window.print()" class="bg-white/10 hover:bg-white/20 transition-all text-xs font-medium px-4 py-2.5 rounded-lg border border-white/20 flex items-center gap-2 self-stretch md:self-auto justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+                </svg>
+                Версія для друку (PDF)
+            </button>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-6xl w-full mx-auto p-4 sm:p-6 lg:p-8 space-y-8">
+        
+        <!-- Tool Essence Section -->
+        <section class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+            <div class="flex flex-col md:flex-row gap-6">
+                <div class="md:w-2/3 space-y-4">
+                    <h2 class="text-xl font-bold text-slate-900 border-b pb-2">Суть інструменту</h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        <strong>«Групове дослідження»</strong> — це структурований інструмент командної роботи, який допомагає групі самостійно дослідити складну тему, зібрати внутрішню аналітику та знайти ефективні рішення без зовнішніх директивних підказок. 
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        Роль фасилітатора у цьому процесі — утримувати рамку структури, стимулювати глибину запитань та спрямовувати учасників на візуалізацію даних, що запобігає перетворенню обговорення на хаотичну суперечку.
+                    </p>
+                </div>
+                <div class="md:w-1/3 bg-slate-50 rounded-lg p-5 border border-slate-100 space-y-4">
+                    <h3 class="text-sm font-semibold uppercase tracking-wider text-slate-500">Чому це працює?</h3>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li class="flex gap-2">
+                            <span class="text-brand-600 font-bold">✓</span>
+                            <span><strong>Процесуальний каркас:</strong> рух за вивіреними етапами від аналізу до рішень.</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-brand-600 font-bold">✓</span>
+                            <span><strong>Багатовимірність:</strong> типи запитань змушують дивитися на проблему через цифри, емоції, шкали та досвід.</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-brand-600 font-bold">✓</span>
+                            <span><strong>Співвласність:</strong> високий рівень залученості, оскільки аналітику група створює сама.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scenario Switcher (Alternatives Preference) -->
+        <section class="space-y-4">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+                <div>
+                    <h2 class="text-lg font-bold text-slate-900">Альтернативні сценарії реалізації</h2>
+                    <p class="text-xs text-slate-500">Оберіть часовий формат сесії для адаптації таймінгу та фокусу роботи</p>
+                </div>
+                <!-- Controls -->
+                <div class="inline-flex rounded-lg border border-slate-200 bg-white p-1 self-stretch sm:self-auto">
+                    <button onclick="switchScenario('express')" id="btn-express" class="flex-1 sm:flex-none text-xs font-medium px-4 py-2 rounded-md transition-colors text-slate-600 hover:text-slate-900">
+                        Експрес (45 хв)
+                    </button>
+                    <button onclick="switchScenario('classic')" id="btn-classic" class="flex-1 sm:flex-none text-xs font-medium px-4 py-2 rounded-md transition-colors bg-brand-600 text-white shadow-sm">
+                        Стандарт (80 хв)
+                    </button>
+                    <button onclick="switchScenario('deep')" id="btn-deep" class="flex-1 sm:flex-none text-xs font-medium px-4 py-2 rounded-md transition-colors text-slate-600 hover:text-slate-900">
+                        Глибокий аналіз (120 хв)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Timing visualization -->
+            <div class="grid grid-cols-2 md:grid-cols-6 gap-2 text-center" id="timing-grid">
+                <!-- Dynamically updated by JS -->
+            </div>
+        </section>
+
+        <!-- Interactive Steps Guide -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            
+            <!-- Step Selection (Left Column / Vertical Navigation) -->
+            <div class="lg:col-span-4 space-y-3">
+                <h3 class="text-sm font-semibold uppercase tracking-wider text-slate-400 mb-2">Навігатор кроками фасилітації</h3>
+                
+                <button onclick="selectStep(1)" id="step-nav-1" class="w-full text-left p-4 rounded-xl border border-slate-200 bg-white hover:border-slate-300 transition-all shadow-sm flex items-start gap-3 step-active">
+                    <span class="w-6 h-6 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">1</span>
+                    <div>
+                        <h4 class="font-semibold text-sm">Інструктаж та об'єднання</h4>
+                        <p class="text-xs text-slate-500 mt-0.5" id="step-time-nav-1">10 хв • Організація груп</p>
+                    </div>
+                </button>
+
+                <button onclick="selectStep(2)" id="step-nav-2" class="w-full text-left p-4 rounded-xl border border-slate-200 bg-white hover:border-slate-300 transition-all shadow-sm flex items-start gap-3">
+                    <span class="w-6 h-6 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">2</span>
+                    <div>
+                        <h4 class="font-semibold text-sm">Підготовка запитань</h4>
+                        <p class="text-xs text-slate-500 mt-0.5" id="step-time-nav-2">10-20 хв • Створення опитувальника</p>
+                    </div>
+                </button>
+
+                <button onclick="selectStep(3)" id="step-nav-3" class="w-full text-left p-4 rounded-xl border border-slate-200 bg-white hover:border-slate-300 transition-all shadow-sm flex items-start gap-3">
+                    <span class="w-6 h-6 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">3</span>
+                    <div>
+                        <h4 class="font-semibold text-sm">Активне дослідження</h4>
+                        <p class="text-xs text-slate-500 mt-0.5" id="step-time-nav-3">20 хв • Збір та інтерв'ювання</p>
+                    </div>
+                </button>
+
+                <button onclick="selectStep(4)" id="step-nav-4" class="w-full text-left p-4 rounded-xl border border-slate-200 bg-white hover:border-slate-300 transition-all shadow-sm flex items-start gap-3">
+                    <span class="w-6 h-6 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">4</span>
+                    <div>
+                        <h4 class="font-semibold text-sm">Візуалізація результатів</h4>
+                        <p class="text-xs text-slate-500 mt-0.5" id="step-time-nav-4">20 хв • Оформлення плакатів</p>
+                    </div>
+                </button>
+
+                <button onclick="selectStep(5)" id="step-nav-5" class="w-full text-left p-4 rounded-xl border border-slate-200 bg-white hover:border-slate-300 transition-all shadow-sm flex items-start gap-3">
+                    <span class="w-6 h-6 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">5</span>
+                    <div>
+                        <h4 class="font-semibold text-sm">Презентація та дебрифінг</h4>
+                        <p class="text-xs text-slate-500 mt-0.5" id="step-time-nav-5">15 хв • Прийняття рішень</p>
+                    </div>
+                </button>
+            </div>
+
+            <!-- Detailed Content Card (Right Column) -->
+            <div class="lg:col-span-8 bg-white rounded-xl shadow-sm border border-slate-200 p-6 sm:p-8 space-y-6" id="details-container">
+                <!-- Content injected dynamically via JS -->
+            </div>
+
+        </section>
+
+        <!-- Methodological Question Matrix Explorer (UPDATED & ENHANCED) -->
+        <section class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 space-y-6">
+            <div>
+                <h2 class="text-xl font-bold text-slate-900">Методична матриця типів запитань</h2>
+                <p class="text-sm text-slate-500 mt-1">
+                    Основна цінність інструменту — збалансований збір інформації. Кожна робоча група має створити запитання різних типів для всебічного аналізу проблеми. Оберіть тип запитання нижче для перегляду детального методичного розбору.
+                </p>
+            </div>
+
+            <!-- Question matrix interactive grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-3">
+                <button onclick="showQuestionInfo('scale')" id="qbtn-scale" class="p-4 rounded-xl border-2 border-brand-100 bg-brand-50/50 text-left hover:border-brand-300 transition-all">
+                    <span class="text-xs font-semibold uppercase text-brand-600 block mb-1">01. Шкала (0-10)</span>
+                    <span class="text-sm font-bold text-slate-800 block">Оцінка ставлення</span>
+                </button>
+                <button onclick="showQuestionInfo('stat')" id="qbtn-stat" class="p-4 rounded-xl border border-slate-200 text-left hover:border-slate-300 transition-all">
+                    <span class="text-xs font-semibold uppercase text-slate-500 block mb-1">02. Статистика (%)</span>
+                    <span class="text-sm font-bold text-slate-800 block">Кількісний вимір</span>
+                </button>
+                <button onclick="showQuestionInfo('priority')" id="qbtn-priority" class="p-4 rounded-xl border border-slate-200 text-left hover:border-slate-300 transition-all">
+                    <span class="text-xs font-semibold uppercase text-slate-500 block mb-1">03. Пріоритет (ТОП-3)</span>
+                    <span class="text-sm font-bold text-slate-800 block">Ранжування факторів</span>
+                </button>
+                <button onclick="showQuestionInfo('open')" id="qbtn-open" class="p-4 rounded-xl border border-slate-200 text-left hover:border-slate-300 transition-all">
+                    <span class="text-xs font-semibold uppercase text-slate-500 block mb-1">04. Відкрите</span>
+                    <span class="text-sm font-bold text-slate-800 block">Глибинний аналіз</span>
+                </button>
+                <button onclick="showQuestionInfo('closed')" id="qbtn-closed" class="p-4 rounded-xl border border-slate-200 text-left hover:border-slate-300 transition-all">
+                    <span class="text-xs font-semibold uppercase text-slate-500 block mb-1">05. Закрите (Так/Ні)</span>
+                    <span class="text-sm font-bold text-slate-800 block">Фіксація фактів</span>
+                </button>
+            </div>
+
+            <!-- Question Info Box -->
+            <div id="question-info-box" class="bg-slate-50 rounded-xl p-6 border border-slate-200">
+                <!-- Injected via JS -->
+            </div>
+        </section>
+
+        <!-- Dynamic Visualization Blueprints & Examples -->
+        <section class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 space-y-6">
+            <div>
+                <h2 class="text-xl font-bold text-slate-900">Аналітичні шаблони візуалізації на фліпчарті</h2>
+                <p class="text-sm text-slate-500 mt-1">Оберіть тип відображення даних, щоб переглянути методику побудови макета та готовий скрипт інструктажу для учасників.</p>
+            </div>
+
+            <!-- Tabs selector for 7 types of visualization -->
+            <div class="flex flex-wrap gap-2 border-b border-slate-200 pb-3" id="viz-tabs-container">
+                <button onclick="showVizType('ray')" id="vbtn-ray" class="px-3.5 py-2 text-xs font-semibold rounded-lg border border-slate-200 text-slate-600 hover:bg-slate-50 viz-active">
+                    Числовий промінь
+                </button>
+                <button onclick="showVizType('pie')" id="vbtn-pie" class="px-3.5 py-2 text-xs font-semibold rounded-lg border border-slate-200 text-slate-600 hover:bg-slate-50">
+                    Кругова діаграма
+                </button>
+                <button onclick="showVizType('bar')" id="vbtn-bar" class="px-3.5 py-2 text-xs font-semibold rounded-lg border border-slate-200 text-slate-600 hover:bg-slate-50">
+                    Стовпчастий індикатор
+                </button>
+                <button onclick="showVizType('rank')" id="vbtn-rank" class="px-3.5 py-2 text-xs font-semibold rounded-lg border border-slate-200 text-slate-600 hover:bg-slate-50">
+                    Рейтингова таблиця
+                </button>
+                <button onclick="showVizType('cloud')" id="vbtn-cloud" class="px-3.5 py-2 text-xs font-semibold rounded-lg border border-slate-200 text-slate-600 hover:bg-slate-50">
+                    Хмара слів
+                </button>
+                <button onclick="showVizType('cluster')" id="vbtn-cluster" class="px-3.5 py-2 text-xs font-semibold rounded-lg border border-slate-200 text-slate-600 hover:bg-slate-50">
+                    Кластеризація
+                </button>
+                <button onclick="showVizType('proportion')" id="vbtn-proportion" class="px-3.5 py-2 text-xs font-semibold rounded-lg border border-slate-200 text-slate-600 hover:bg-slate-50">
+                    Пропорційне порівняння
+                </button>
+            </div>
+
+            <!-- Visualization Main Dashboard -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 bg-slate-50/50 rounded-xl p-5 border border-slate-100" id="viz-content-container">
+                <!-- Injected via Javascript -->
+            </div>
+        </section>
+
+        <!-- Interactive Readiness Checklist -->
+        <section class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 space-y-6">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b pb-4">
+                <div>
+                    <h2 class="text-xl font-bold text-slate-900">Чек-лист готовності фасилітатора</h2>
+                    <p class="text-sm text-slate-500 mt-1">Використовуйте цей інтерактивний список для перевірки готовності простору та матеріалів перед стартом сесії.</p>
+                </div>
+                <div class="text-right shrink-0">
+                    <span class="text-sm font-bold text-brand-900 bg-brand-100 px-3 py-1.5 rounded-full" id="checklist-counter">
+                        Виконано: 0 з 8
+                    </span>
+                </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="w-full bg-slate-100 rounded-full h-2.5">
+                <div id="checklist-progress" class="bg-brand-600 h-2.5 rounded-full transition-all duration-300" style="width: 0%"></div>
+            </div>
+
+            <!-- Checklist Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="checklist-container">
+                <!-- Checkbox items with category tags -->
+                <label class="relative flex items-start p-4 rounded-lg border border-slate-200 bg-slate-50/50 hover:bg-slate-50 cursor-pointer transition-all">
+                    <div class="flex items-center h-5">
+                        <input type="checkbox" onchange="updateChecklistProgress()" class="checklist-checkbox h-4 w-4 rounded border-slate-300 text-brand-600 focus:ring-brand-500">
+                    </div>
+                    <div class="ml-3 text-sm">
+                        <span class="inline-block text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-slate-200 text-slate-700 mb-1">Матеріали</span>
+                        <p class="text-slate-700 font-medium">Підготувати фліпчарти, маркери (мінімум 3 кольори на групу) та стікери.</p>
+                    </div>
+                </label>
+
+                <label class="relative flex items-start p-4 rounded-lg border border-slate-200 bg-slate-50/50 hover:bg-slate-50 cursor-pointer transition-all">
+                    <div class="flex items-center h-5">
+                        <input type="checkbox" onchange="updateChecklistProgress()" class="checklist-checkbox h-4 w-4 rounded border-slate-300 text-brand-600 focus:ring-brand-500">
+                    </div>
+                    <div class="ml-3 text-sm">
+                        <span class="inline-block text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-blue-100 text-blue-800 mb-1">Підготовка</span>
+                        <p class="text-slate-700 font-medium">Сформулювати фокусну проблему / тему дослідження для команд.</p>
+                    </div>
+                </label>
+
+                <label class="relative flex items-start p-4 rounded-lg border border-slate-200 bg-slate-50/50 hover:bg-slate-50 cursor-pointer transition-all">
+                    <div class="flex items-center h-5">
+                        <input type="checkbox" onchange="updateChecklistProgress()" class="checklist-checkbox h-4 w-4 rounded border-slate-300 text-brand-600 focus:ring-brand-500">
+                    </div>
+                    <div class="ml-3 text-sm">
+                        <span class="inline-block text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-green-100 text-green-800 mb-1">Простір</span>
+                        <p class="text-slate-700 font-medium">Розділити простір аудиторії на 4 окремі робочі зони (для 4 команд).</p>
+                    </div>
+                </label>
+
+                <label class="relative flex items-start p-4 rounded-lg border border-slate-200 bg-slate-50/50 hover:bg-slate-50 cursor-pointer transition-all">
+                    <div class="flex items-center h-5">
+                        <input type="checkbox" onchange="updateChecklistProgress()" class="checklist-checkbox h-4 w-4 rounded border-slate-300 text-brand-600 focus:ring-brand-500">
+                    </div>
+                    <div class="ml-3 text-sm">
+                        <span class="inline-block text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-purple-100 text-purple-800 mb-1">Логістика</span>
+                        <p class="text-slate-700 font-medium">Підготувати таймер та систему звукових сигналів для фаз взаємодії.</p>
+                    </div>
+                </label>
+
+                <label class="relative flex items-start p-4 rounded-lg border border-slate-200 bg-slate-50/50 hover:bg-slate-50 cursor-pointer transition-all">
+                    <div class="flex items-center h-5">
+                        <input type="checkbox" onchange="updateChecklistProgress()" class="checklist-checkbox h-4 w-4 rounded border-slate-300 text-brand-600 focus:ring-brand-500">
+                    </div>
+                    <div class="ml-3 text-sm">
+                        <span class="inline-block text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-slate-200 text-slate-700 mb-1">Матеріали</span>
+                        <p class="text-slate-700 font-medium">Роздрукувати шаблони опитувальників або вивести на екран структуру запитань.</p>
+                    </div>
+                </label>
+
+                <label class="relative flex items-start p-4 rounded-lg border border-slate-200 bg-slate-50/50 hover:bg-slate-50 cursor-pointer transition-all">
+                    <div class="flex items-center h-5">
+                        <input type="checkbox" onchange="updateChecklistProgress()" class="checklist-checkbox h-4 w-4 rounded border-slate-300 text-brand-600 focus:ring-brand-500">
+                    </div>
+                    <div class="ml-3 text-sm">
+                        <span class="inline-block text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-amber-100 text-amber-800 mb-1">Фасилітація</span>
+                        <p class="text-slate-700 font-medium">Пояснити учасникам правила безпечного інтерв'ювання (без критики, фіксація фактів).</p>
+                    </div>
+                </label>
+
+                <label class="relative flex items-start p-4 rounded-lg border border-slate-200 bg-slate-50/50 hover:bg-slate-50 cursor-pointer transition-all">
+                    <div class="flex items-center h-5">
+                        <input type="checkbox" onchange="updateChecklistProgress()" class="checklist-checkbox h-4 w-4 rounded border-slate-300 text-brand-600 focus:ring-brand-500">
+                    </div>
+                    <div class="ml-3 text-sm">
+                        <span class="inline-block text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-amber-100 text-amber-800 mb-1">Фасилітація</span>
+                        <p class="text-slate-700 font-medium">Контролювати, щоб групи не застрягали на етапі формулювання питань (макс. 20 хв).</p>
+                    </div>
+                </label>
+
+                <label class="relative flex items-start p-4 rounded-lg border border-slate-200 bg-slate-50/50 hover:bg-slate-50 cursor-pointer transition-all">
+                    <div class="flex items-center h-5">
+                        <input type="checkbox" onchange="updateChecklistProgress()" class="checklist-checkbox h-4 w-4 rounded border-slate-300 text-brand-600 focus:ring-brand-500">
+                    </div>
+                    <div class="ml-3 text-sm">
+                        <span class="inline-block text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-amber-100 text-amber-800 mb-1">Фасилітація</span>
+                        <p class="text-slate-700 font-medium">Стимулювати візуалізацію: нагадати про графіки, шкали та схеми замість суцільного тексту.</p>
+                    </div>
+                </label>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Disclaimer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 px-4 border-t border-slate-800 text-center text-sm">
+        <div class="max-w-6xl mx-auto space-y-2">
+            <p>© 2026 Методичний кабінет фасилітатора. Всі права збережено.</p>
+            <p class="text-xs text-slate-500">Матеріал розроблено як внутрішній посібник для ведучих стратегічних сесій, хакатонів та воркшопів.</p>
+        </div>
+    </footer>
+
+    <!-- Vanilla Javascript for State & Interactivity -->
+    <script>
+        // Data Structures for Steps
+        const scenarios = {
+            express: {
+                name: "Експрес-версія (45 хв)",
+                description: "Підходить для стиснутих у часі сесій, коли потрібно швидко зібрати фокусну аналітику щодо однієї конкретної підтеми.",
+                timing: [
+                    { label: "1. Інструктаж", time: "5 хв", active: true },
+                    { label: "2. Об'єднання", time: "3 хв", active: true },
+                    { label: "3. Питання", time: "7 хв", active: true },
+                    { label: "4. Дослідження", time: "10 хв", active: true },
+                    { label: "5. Візуалізація", time: "10 хв", active: true },
+                    { label: "6. Презентація", time: "10 хв", active: true }
+                ],
+                steps: {
+                    1: {
+                        title: "Крок 1: Швидкий інструктаж та об'єднання (Експрес-формат)",
+                        timing: "8 хвилин загалом",
+                        fac_todo: [
+                            "Окресліть рамку дослідження у форматі 2-хвилинного виступу.",
+                            "Об'єднайте учасників у групи за допомогою швидкого поділу (наприклад, за кольором карток або першою літерою імені).",
+                            "У кожній групі одразу призначте хронометриста для контролю жорсткого таймінгу."
+                        ],
+                        attention_points: [
+                            "Часу замало для довгих вступів. Слайд із чіткою структурою дослідження має весь час бути на екрані.",
+                            "Якщо група буксує з обранням лідера — призначте його директивно (наприклад, той, у кого найближчий день народження)."
+                        ]
+                    },
+                    2: {
+                        title: "Крок 2: Швидке створення опитувальника",
+                        timing: "7 хвилин",
+                        fac_todo: [
+                            "Знизьте планку очікувань: кожна група має розробити лише 3 чітких запитання замість 5-6.",
+                            "Обов'язкові типи питань для експрес-формату: одне оціночне (шкала), одне кількісне (статистика або пріоритет) та одне відкрите.",
+                            "Контролюйте, щоб питання не дублювали загальновідомі факти."
+                        ],
+                        attention_points: [
+                            "Учасники намагаються дискутувати вже на етапі створення запитань. Нагадуйте: «Зараз ми тільки створюємо термометр для вимірювання, міряти будемо пізніше!»."
+                        ]
+                    },
+                    3: {
+                        title: "Крок 3: Швидкісний збір даних",
+                        timing: "10 хвилин",
+                        fac_todo: [
+                            "Дайте інструкцію опитати щонайменше 3-4 колег у форматі бліц-інтерв'ю (по 2 хвилини на людину).",
+                            "Фасилітатор активно сигналізує кожні 2 хвилини про необхідність зміни співрозмовника.",
+                            "Учасники фіксують відповіді ключовими словами або оцінками без довгих описів."
+                        ],
+                        attention_points: [
+                            "Ризик занурення в дебати. Нагадуйте: «Завдання — зібрати відповідь іншого, а не переконати його у своїй правоті»."
+                        ]
+                    },
+                    4: {
+                        title: "Крок 4: Спрощена візуалізація",
+                        timing: "10 хвилин",
+                        fac_todo: [
+                            "Дайте чіткий шаблон фліпчарту: зверху — тема, посередині — один графік шкали та одна кругова діаграма, знизу — ТОП-3 висновки.",
+                            "Забезпечте групи готовими наліпками (стікерами) для швидкої побудови шкали оцінювання."
+                        ],
+                        attention_points: [
+                            "Групи починають ретельно вимальовувати складні ілюстрації. Орієнтуйте їх на швидкі схематичні замальовки: «Краще корисне та зрозуміле, ніж красиве та порожнє»."
+                        ]
+                    },
+                    5: {
+                        title: "Крок 5: Швидкісна презентація та рішення",
+                        timing: "10 хвилин",
+                        fac_todo: [
+                            "Формат презентації — 1.5 хвилини на групу у стилі Pitch (короткий виклад інсайтів).",
+                            "Сфокусуйте дебрифінг на одному питанні: «Яка одна дія є критичною на основі цих даних?»."
+                        ],
+                        attention_points: [
+                            "Уникайте детальних запитань від інших команд під час презентації. Питання — тільки на уточнення фактів."
+                        ]
+                    }
+                }
+            },
+            classic: {
+                name: "Стандартний сценарій (80-90 хв)",
+                description: "Класичний збалансований сценарій для поглибленого групового дослідження теми в межах середніх за розміром груп (до 30 осіб).",
+                timing: [
+                    { label: "1. Інструктаж", time: "5 хв", active: true },
+                    { label: "2. Об'єднання", time: "5 хв", active: true },
+                    { label: "3. Питання", time: "15 хв", active: true },
+                    { label: "4. Дослідження", time: "20 хв", active: true },
+                    { label: "5. Візуалізація", time: "20 хв", active: true },
+                    { label: "6. Презентація", time: "15 хв", active: true }
+                ],
+                steps: {
+                    1: {
+                        title: "Крок 1: Вступна інструкція та об'єднання груп",
+                        timing: "10 хвилин",
+                        fac_todo: [
+                            "Презентуйте логіку дослідження: поясніть різницю між суб'єктивною думкою та аналітичним підходом.",
+                            "Розділіть учасників на команди по 5-7 осіб (оптимально 4 робочі групи).",
+                            "Дайте чітке завдання кожній групі обрати Ролі: Хронометрист, Спікер та Координатор дослідження."
+                        ],
+                        attention_points: [
+                            "Учасники можуть висловлювати скепсис щодо «вигадування питань». Важливо пояснить, що якість їхнього дослідження прямо залежить від точності запитань."
+                        ]
+                    },
+                    2: {
+                        title: "Крок 2: Розробка методичного опитувальника",
+                        timing: "15 хвилин",
+                        fac_todo: [
+                            "Допоможіть групі зрозуміти Чек-лист питань. Кількість питань має дорівнювати кількості учасників у групі (кожен розробляє та відповідає за своє питання).",
+                            "Спрямовуйте команди використовувати різні типи питань (шкала, статистика, відкрите тощо).",
+                            "Попросіть записати фінальні формулювання запитань на окремому аркуші А4 для зручності інтерв'ювання."
+                        ],
+                        attention_points: [
+                            "Найчастіша помилка команд — створення занадто складних та довгих питань, відповідь на які вимагає лекції. Допомагайте спрощувати формулювання."
+                        ]
+                    },
+                    3: {
+                        title: "Крок 3: Інтерв'ювання та збір первинних даних",
+                        timing: "20 хвилин",
+                        fac_todo: [
+                            "Група розходиться для інтерв'ювання один одного або інших груп.",
+                            "Контролюйте, щоб учасники вели ретельні записи відповідей у своїх блокнотах, а не покладалися виключно на пам'ять.",
+                            "Заохочуйте фіксацію полярних та нетипових відповідей — це майбутні інсайти сесії."
+                        ],
+                        attention_points: [
+                            "Стежте за динамікою в аудиторії: якщо хтось завершив опитування раніше, підштовхніть його детальніше опитати колег за відкритим питанням."
+                        ]
+                    },
+                    4: {
+                        title: "Крок 4: Аналіз даних та візуалізація результатів",
+                        timing: "20 хвилин",
+                        fac_todo: [
+                            "Спрямовуйте групу систематизувати отриману аналітику: звести оцінки до середнього значення, вивести відсотки та сформувати списки.",
+                            "Роздайте маркери та фліпчарти. Дайте інструкцію: «Створіть аналітичний плакат, де мінімум тексту і максимум інфографіки (шкали, сектори, графіки)»."
+                        ],
+                        attention_points: [
+                            "Команди часто скочуються у текстові конспекти. Забирайте зайві ручки, залишайте тільки широкі кольорові маркери — це стимулює до малювання схем та графіків."
+                        ]
+                    },
+                    5: {
+                        title: "Крок 5: Презентація результатів та дебрифінг",
+                        timing: "15 хвилин",
+                        fac_todo: [
+                            "Встановіть жорсткий таймінг для виступу: 3 хвилини на презентацію плакату кожною групою.",
+                            "Проведіть підсумковий дебрифінг: Які спільні тренди ми бачимо? Що нас здивувало? Які системні рішення напрошуються?",
+                            "Зафіксуйте ключові висновки та зони відповідальності (HR, коучі, медіа тощо) на загальній дошці."
+                        ],
+                        attention_points: [
+                            "Захищайте спікерів від критиканства з боку залу. Забезпечте підтримуючу та аналітичну атмосферу."
+                        ]
+                    }
+                }
+            },
+            deep: {
+                name: "Глибокий аналіз (120+ хв)",
+                description: "Сценарій для стратегічних сесій, де дослідження є ядром усього заходу і потребує високого рівня деталізації рішень.",
+                timing: [
+                    { label: "1. Інструктаж", time: "10 хв", active: true },
+                    { label: "2. Об'єднання", time: "10 хв", active: true },
+                    { label: "3. Питання", time: "25 хв", active: true },
+                    { label: "4. Дослідження", time: "35 хв", active: true },
+                    { label: "5. Візуалізація", time: "25 хв", active: true },
+                    { label: "6. Презентація", time: "20 хв", active: true }
+                ],
+                steps: {
+                    1: {
+                        title: "Крок 1: Глибоке налаштування та формування груп",
+                        timing: "20 хвилин загалом",
+                        fac_todo: [
+                            "Окресліть не лише проблему, а й довгостроковий бізнес-контекст дослідження.",
+                            "Проведіть соціометричний поділ, щоб збалансувати команди за досвідом та компетенціями.",
+                            "Узгодьте з групами правила верифікації даних під час дослідження."
+                        ],
+                        attention_points: [
+                            "За тривалого процесу мотивація може падати. Одразу поясніть стратегічну цінність фінального результату дослідження для проекту."
+                        ]
+                    },
+                    2: {
+                        title: "Крок 2: Розробка багаторівневого інструментарію",
+                        timing: "25 хвилин",
+                        fac_todo: [
+                            "Заохочуйте групи розробляти не просто поодинокі питання, а логічні зв'язки.",
+                            "Кожна група розробляє детальний опитувальник із 5-7 ретельно вивірених запитань.",
+                            "Проведіть взаємне тестування питань між лідерами груп перед початком активної фази."
+                        ],
+                        attention_points: [
+                            "Не допускайте розмивання фокусу. Питання мають бути спрямовані виключно на цільову проблематику сесії."
+                        ]
+                    },
+                    3: {
+                        title: "Крок 3: Масштабне дослідження (Крос-інтерв'ю)",
+                        timing: "35 хвилин",
+                        fac_todo: [
+                            "Організуйте процес за принципом 'світових кафе': частина учасників залишається за столами як 'експерти', а інша частина 'мігрує'.",
+                            "Дайте можливість опитати ширше коло людей для репрезентативності результатів.",
+                            "Здійснюйте проміжний моніторинг глибини відповідей."
+                        ],
+                        attention_points: [
+                            "Під час тривалого інтерв'ювання учасники можуть втомлюватися. Сплануйте коротку 2-хвилинну рухову розминку посеред етапу."
+                        ]
+                    },
+                    4: {
+                        title: "Крок 4: Детальна аналітика та оформлення звітних панелей",
+                        timing: "25 хвилин",
+                        fac_todo: [
+                            "Забезпечте команди додатковими інструментами аналізу: SWOT-шаблонами або матрицями пріоритетів.",
+                            "Стимулюйте створення багаторівневих дашбордів на фліпчартах (поєднання кількісних шкал, цитат та списків)."
+                        ],
+                        attention_points: [
+                            "Учасники можуть потонути в обсягах даних. Направляйте їх фокус: 'Які 3 ключові аномалії ви виявили у зібраних анкетах?'."
+                        ]
+                    },
+                    5: {
+                        title: "Крок 5: Розширений захист та планування дій",
+                        timing: "20 хвилин",
+                        fac_todo: [
+                            "Виділіть по 4-5 хвилин на виступ, включаючи сесію запитань та відповідей від інших команд.",
+                            "Сформуйте підсумкову дорожню карту: конкретні перші кроки, терміни та відповідальних осіб."
+                        ],
+                        attention_points: [
+                            "Запобігайте формальному захисту проектів. Ставте провокаційні запитання на кшталт: 'Що саме завадить реалізувати цю ідею вже завтра?'."
+                        ]
+                    }
+                }
+            }
+        };
+
+        // Detailed visualization blueprints data
+        const visualizationBlueprints = {
+            ray: {
+                title: "Побудова числового променя",
+                subtitle: "Для виявлення середньої оцінки та полярності думок",
+                html_preview: `
+                    <div class="border-2 border-dashed border-slate-300 rounded-xl p-5 bg-white space-y-4 max-w-sm mx-auto shadow-inner relative">
+                        <div class="absolute top-2 right-2 text-[9px] font-bold text-slate-400 bg-slate-100 px-1.5 py-0.5 rounded">МАКЕТ ФЛІПЧАРТА</div>
+                        <h5 class="text-xs font-bold text-slate-400 uppercase tracking-widest text-center">Питання: Наша швидкість прийняття рішень?</h5>
+                        <div class="relative py-6">
+                            <!-- Number ray line -->
+                            <div class="h-1 bg-slate-400 rounded w-full relative"></div>
+                            <!-- Scale markers -->
+                            <div class="flex justify-between text-[10px] font-bold text-slate-500 mt-2">
+                                <span>0</span><span>2</span><span>4</span><span>6</span><span>8</span><span>10</span>
+                            </div>
+                            <!-- Target markers (represented as dots) -->
+                            <div class="absolute left-[30%] top-3 w-3 h-3 bg-red-500 rounded-full border border-white shadow"></div>
+                            <div class="absolute left-[65%] top-3 w-3 h-3 bg-red-500 rounded-full border border-white shadow"></div>
+                            <div class="absolute left-[70%] top-3 w-3 h-3 bg-red-500 rounded-full border border-white shadow"></div>
+                            <div class="absolute left-[75%] top-3 w-3 h-3 bg-red-500 rounded-full border border-white shadow"></div>
+                            <!-- Average indicator -->
+                            <div class="absolute left-[60%] top-1.5 flex flex-col items-center">
+                                <div class="w-1 h-8 bg-brand-600"></div>
+                                <span class="bg-brand-600 text-white text-[9px] font-bold px-1 py-0.5 rounded mt-1">Сер. значення: 6.2</span>
+                            </div>
+                        </div>
+                    </div>
+                `,
+                when_to_use: "Коли потрібно наочно показати розкид оцінок групи (наприклад, оцінка взаємодії, готовність до змін чи рівень задоволеності процесами).",
+                instruction: "«Друзі, намалюйте на плакаті горизонтальну лінію та поділіть її на 10 рівних частин від 0 до 10. Кожен учасник вашої групи має підійти до плакату і поставити червону крапку або маркерний штрих над тією цифрою, яка відповідає його оцінці. Потім вирахуйте середнє арифметичне значення всіх оцінок та позначте його яскравою вертикальною лінією або прапорцем іншого кольору».",
+                tip: "Якщо крапки скупчені навколо середнього значення — у групі є консенсус. Якщо крапки розійшлися по краях (наприклад, три оцінки по 2 бали, а чотири — по 9) — зверніть увагу групи на цю полярність. Це сигнал глибокої внутрішньої проблеми або конфлікту очікувань."
+            },
+            pie: {
+                title: "Кругова діаграма (Pie Chart)",
+                subtitle: "Для візуалізації відсоткових часток та структури відповідей",
+                html_preview: `
+                    <div class="border-2 border-dashed border-slate-300 rounded-xl p-5 bg-white space-y-4 max-w-sm mx-auto shadow-inner relative">
+                        <div class="absolute top-2 right-2 text-[9px] font-bold text-slate-400 bg-slate-100 px-1.5 py-0.5 rounded">МАКЕТ ФЛІПЧАРТА</div>
+                        <h5 class="text-xs font-bold text-slate-400 uppercase tracking-widest text-center">Частка рутинних завдань у роботі?</h5>
+                        <div class="flex justify-center py-2">
+                            <!-- SVG Pie representation -->
+                            <svg class="w-28 h-28 transform -rotate-90" viewBox="0 0 32 32">
+                                <circle r="16" cx="16" cy="16" fill="transparent" stroke="#e2e8f0" stroke-width="32" />
+                                <circle r="16" cx="16" cy="16" fill="transparent" stroke="#0284c7" stroke-width="32" stroke-dasharray="70 100" />
+                            </svg>
+                        </div>
+                        <div class="flex justify-center gap-4 text-xs">
+                            <span class="flex items-center gap-1.5"><span class="w-3 h-3 bg-brand-600 rounded"></span>70% Рутина</span>
+                            <span class="flex items-center gap-1.5"><span class="w-3 h-3 bg-slate-200 rounded"></span>30% Розвиток</span>
+                        </div>
+                    </div>
+                `,
+                when_to_use: "Для запитань типу «Статистика (%)», де важливо структурувати ціле на окремі сектори.",
+                instruction: "«Намалюйте на плакаті коло за допомогою маркера. Розділіть це коло на сектори відповідно до відсотків, які ви вивели під час інтерв'ювання. Для цього уявіть, що коло — це циферблат годинника, де 1 година дорівнює приблизно 8%. Зафарбуйте найбільший сектор основним яскравим кольором, а решту — більш нейтральними відтінками».",
+                tip: "Не дозволяйте учасникам розбивати коло на занадто велику кількість дрібних секторів (оптимально — до 3-4 категорій). Якщо категорій більше — згрупуйте дрібні відповіді в один сектор «Інше»."
+            },
+            bar: {
+                title: "Стовпчастий індикатор",
+                subtitle: "Для порівняння окремих показників",
+                html_preview: `
+                    <div class="border-2 border-dashed border-slate-300 rounded-xl p-5 bg-white space-y-4 max-w-sm mx-auto shadow-inner relative">
+                        <div class="absolute top-2 right-2 text-[9px] font-bold text-slate-400 bg-slate-100 px-1.5 py-0.5 rounded">МАКЕТ ФЛІПЧАРТА</div>
+                        <h5 class="text-xs font-bold text-slate-400 uppercase tracking-widest text-center">Пріоритетні напрямки покращення</h5>
+                        <div class="space-y-2.5 py-2">
+                            <div>
+                                <div class="flex justify-between text-xs font-bold mb-1">
+                                    <span>Комунікація</span><span>80%</span>
+                                </div>
+                                <div class="w-full bg-slate-100 h-3 rounded-full overflow-hidden">
+                                    <div class="bg-brand-600 h-full rounded-full" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-bold mb-1">
+                                    <span>Інструменти</span><span>45%</span>
+                                </div>
+                                <div class="w-full bg-slate-100 h-3 rounded-full overflow-hidden">
+                                    <div class="bg-brand-600 h-full rounded-full" style="width: 45%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-bold mb-1">
+                                    <span>Процеси</span><span>20%</span>
+                                </div>
+                                <div class="w-full bg-slate-100 h-3 rounded-full overflow-hidden">
+                                    <div class="bg-slate-300 h-full rounded-full" style="width: 20%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `,
+                when_to_use: "Коли необхідно порівняти якість або популярність декількох альтернативних об'єктів без урахування їх частки у загальному бюджеті.",
+                instruction: "«Зобразіть результати вашого порівняння у вигляді горизонтальних або вертикальних стовпчиків. Кожен стовпчик має відповідати окремому параметру. Довжина стовпчика має відображати відсоток підтримки або оцінку параметра. Використовуйте один колір для лідерів і сірий або нейтральний — для аутсайдерів».",
+                tip: "Порекомендуйте підписувати назви параметрів безпосередньо біля стовпчиків, а не у виносці (легенді) збоку. Це суттєво підвищує швидкість зчитування плаката під час презентації іншими групами."
+            },
+            rank: {
+                title: "Рейтингова таблиця",
+                subtitle: "Для виявлення ТОП-3 лідерів",
+                html_preview: `
+                    <div class="border-2 border-dashed border-slate-300 rounded-xl p-5 bg-white space-y-4 max-w-sm mx-auto shadow-inner relative">
+                        <div class="absolute top-2 right-2 text-[9px] font-bold text-slate-400 bg-slate-100 px-1.5 py-0.5 rounded">МАКЕТ ФЛІПЧАРТА</div>
+                        <h5 class="text-xs font-bold text-slate-400 uppercase tracking-widest text-center">Рейтинг інструментів для просування</h5>
+                        <div class="space-y-2 py-2">
+                            <div class="flex items-center gap-3 bg-brand-50 border border-brand-100 p-2 rounded-lg">
+                                <span class="w-6 h-6 rounded-full bg-brand-600 text-white flex items-center justify-center font-bold text-xs">1</span>
+                                <span class="text-xs font-bold text-slate-800 flex-grow">Соціальні мережі</span>
+                                <span class="text-xs text-brand-600 font-bold">12 голосів</span>
+                            </div>
+                            <div class="flex items-center gap-3 bg-slate-50 border border-slate-100 p-2 rounded-lg">
+                                <span class="w-6 h-6 rounded-full bg-slate-300 text-slate-700 flex items-center justify-center font-bold text-xs">2</span>
+                                <span class="text-xs font-bold text-slate-800 flex-grow">Email-маркетинг</span>
+                                <span class="text-xs text-slate-500">8 голосів</span>
+                            </div>
+                            <div class="flex items-center gap-3 bg-slate-50 border border-slate-100 p-2 rounded-lg">
+                                <span class="w-6 h-6 rounded-full bg-slate-300 text-slate-700 flex items-center justify-center font-bold text-xs">3</span>
+                                <span class="text-xs font-bold text-slate-800 flex-grow">Контент-план</span>
+                                <span class="text-xs text-slate-500">5 голосів</span>
+                            </div>
+                        </div>
+                    </div>
+                `,
+                when_to_use: "Для обробки запитань щодо пріоритетів та ранжування, коли потрібно чітко сфокусувати групу на трьох найважливіших позиціях.",
+                instruction: "«Створіть на плакаті акуратну трирівневу рейтингову таблицю. На перше місце винесіть варіант відповіді, який набрав найбільшу кількість голосів під час опитування. Запишіть кількість згадок чи голосів біля кожної позиції. Обведіть перше місце яскравою рамкою».",
+                tip: "Якщо два варіанти набрали однакову кількість балів, помістіть їх на один рядок. Не вигадуйте штучну різницю. У фасилітації це називається ситуацією розділеного пріоритету, яка вказує на рівнозначну важливість обох факторів."
+            },
+            cloud: {
+                title: "Хмара слів (асоціацій)",
+                subtitle: "Для фіксації емоційних та якісних характеристик",
+                html_preview: `
+                    <div class="border-2 border-dashed border-slate-300 rounded-xl p-5 bg-white space-y-4 max-w-sm mx-auto shadow-inner relative">
+                        <div class="absolute top-2 right-2 text-[9px] font-bold text-slate-400 bg-slate-100 px-1.5 py-0.5 rounded">МАКЕТ ФЛІПЧАРТА</div>
+                        <h5 class="text-xs font-bold text-slate-400 uppercase tracking-widest text-center">Слова-асоціації з проблемою</h5>
+                        <div class="flex flex-wrap justify-center items-center gap-3 p-4 h-24">
+                            <span class="text-lg font-bold text-red-600">БЮРОКРАТІЯ</span>
+                            <span class="text-xs font-medium text-slate-400">Хаос</span>
+                            <span class="text-sm font-semibold text-brand-600">Папери</span>
+                            <span class="text-xs font-semibold text-slate-500">Втрата часу</span>
+                            <span class="text-base font-bold text-brand-900">ЧЕРГИ</span>
+                        </div>
+                    </div>
+                `,
+                when_to_use: "Для візуалізації відповідей на відкриті питання, де учасники називали асоціації, емоції, бар'єри або ключові слова.",
+                instruction: "«Випишіть усі слова-відповіді, які ви почули від колег. Розмістіть їх на плакаті в хаотичному порядку. Головне правило: що частіше повторювалося певне слово під час інтерв'ювання, то більшим шрифтом та яскравішим кольором ви маєте написати його на фліпчарті. Малозначні та поодинокі слова пишіть маленькими літерами».",
+                tip: "Це чудовий художній інструмент. Проте наголошуйте командам, що слова мають бути короткими (іменники чи прикметники в однині), щоб хмара не перетворилася на нечитабельний конспект."
+            },
+            cluster: {
+                title: "Кластеризація за категоріями",
+                subtitle: "Для структурування несистематизованих ідей",
+                html_preview: `
+                    <div class="border-2 border-dashed border-slate-300 rounded-xl p-5 bg-white space-y-4 max-w-sm mx-auto shadow-inner relative">
+                        <div class="absolute top-2 right-2 text-[9px] font-bold text-slate-400 bg-slate-100 px-1.5 py-0.5 rounded">МАКЕТ ФЛІПЧАРТА</div>
+                        <h5 class="text-xs font-bold text-slate-400 uppercase tracking-widest text-center">Пропозиції щодо змін</h5>
+                        <div class="grid grid-cols-2 gap-3 py-1">
+                            <div class="border border-slate-200 rounded p-2 bg-slate-50">
+                                <h6 class="text-[10px] font-bold text-brand-900 uppercase tracking-wider mb-1.5 border-b pb-0.5">Організаційні</h6>
+                                <div class="space-y-1">
+                                    <div class="bg-yellow-100 text-[9px] p-1 rounded border border-yellow-200 text-yellow-800 font-medium">Нові інструкції</div>
+                                    <div class="bg-yellow-100 text-[9px] p-1 rounded border border-yellow-200 text-yellow-800 font-medium">Зміна ролей</div>
+                                </div>
+                            </div>
+                            <div class="border border-slate-200 rounded p-2 bg-slate-50">
+                                <h6 class="text-[10px] font-bold text-brand-900 uppercase tracking-wider mb-1.5 border-b pb-0.5">Технологічні</h6>
+                                <div class="space-y-1">
+                                    <div class="bg-emerald-100 text-[9px] p-1 rounded border border-emerald-200 text-emerald-800 font-medium">Створити чат-бот</div>
+                                    <div class="bg-emerald-100 text-[9px] p-1 rounded border border-emerald-200 text-emerald-800 font-medium">Запровадити CRM</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `,
+                when_to_use: "Коли група зібрала велику кількість різнопланових пропозицій і необхідно навести в них концептуальний лад.",
+                instruction: "«Поділіть ваш плакат на декілька великих логічних зон (наприклад: Технології, Процеси, Людина). Напишіть назви цих категорій як заголовки стовпчиків. Розподіліть усі зібрані ідеї у відповідні колонки за допомогою кольорових стікерів або маркерів відповідних кольорів. Кожна ідея повинна потрапити лише в одну категорію».",
+                tip: "Якщо виникає дискусія, до якої категорії належить ідея — це чудово. Фасилітатор стимулює команду дійти консенсусу, але якщо ідея дійсно на перетині — можна намалювати стрілки зв'язку між стовпчиками."
+            },
+            proportion: {
+                title: "Пропорційне порівняння",
+                subtitle: "Для демонстрації балансу протилежних сил чи думок",
+                html_preview: `
+                    <div class="border-2 border-dashed border-slate-300 rounded-xl p-5 bg-white space-y-4 max-w-sm mx-auto shadow-inner relative">
+                        <div class="absolute top-2 right-2 text-[9px] font-bold text-slate-400 bg-slate-100 px-1.5 py-0.5 rounded">МАКЕТ ФЛІПЧАРТА</div>
+                        <h5 class="text-xs font-bold text-slate-400 uppercase tracking-widest text-center">Баланс: Співпраця vs Конкуренція</h5>
+                        <div class="flex items-center gap-1.5 py-4">
+                            <!-- Left ratio block -->
+                            <div class="bg-brand-600 text-white rounded p-3 text-center font-bold text-sm" style="width: 75%">
+                                75% Співпраця
+                            </div>
+                            <!-- Right ratio block -->
+                            <div class="bg-slate-300 text-slate-700 rounded p-3 text-center font-bold text-sm" style="width: 25%">
+                                25%
+                            </div>
+                        </div>
+                        <div class="text-[10px] text-slate-500 text-center italic">Повністю конкурентна модель не підтримується групою</div>
+                    </div>
+                `,
+                when_to_use: "Коли дослідження стосується вибору концепцій або порівняння двох альтернатив (наприклад, 'Креативність' проти 'Дисципліни').",
+                instruction: "«Створіть на плакаті пропорційну шкалу-ваги або розділений блок. Покажіть у відсотках, яка частка учасників підтримує ліву концепцію, а яка — праву. Використовуйте протилежні кольори, щоб наочно продемонструвати пропорційне співвідношення сил у команді».",
+                tip: "Уникайте трактування 'меншості' як поразки. Навіть 10% підтримки протилежної сторони можуть містити важливі безпекові застереження для проекту, які фасилітатор повинен витягнути під час презентації результатів."
+            }
+        };
+
+        // Complete data structure for methodological question explorer
+        const questionTypes = {
+            scale: {
+                title: "Оцінка / Шкала (0-10)",
+                recommended: "1-2 запитання",
+                criteria: "Використання лінійної числової шкали від 0 до 10 для точної фіксації суб'єктивного відношення.",
+                example: "«Наскільки ти віриш, що ми можемо це зробити?»",
+                purpose: "Швидко виявити рівень впевненості, задоволеності, віри в успіх чи суб'єктивної оцінки складності досліджуваного процесу в межах групи.",
+                tips: "Допомагає фасилітатору виявити прихований скепсис або полярність поглядів на самому початку. Якщо більшість оцінок низькі — це маркер, що необхідно сфокусувати наступний етап дебрифінгу на виявленні системних бар'єрів."
+            },
+            stat: {
+                title: "Статистика (%)",
+                recommended: "1-2 запитання",
+                criteria: "Запитання, відповіддю на яке є точне або прогнозоване відсоткове значення (від 0% до 100%).",
+                example: "«Який % провальних сесій відбувається через відсутність сценаріїв?»",
+                purpose: "Оцінити внутрішнє, суб'єктивне сприйняття обсягів втрат, частоти помилок або неефективного використання часу/ресурсів.",
+                tips: "Цифри діють протверезно на будь-яку команду. Переведення проблеми у відсотки допомагає фасилітатору уникнути загальних емоційних фраз на кшталт «у нас усе погано» і скерувати обговорення до конкретного числового вимірювання."
+            },
+            priority: {
+                title: "Пріоритети (ТОП-3)",
+                recommended: "1 запитання",
+                criteria: "Запитання, що змушує респондента відсіяти другорядне та обрати рівно три ключові фактори.",
+                example: "«ТОП-3 інструменти для просування»",
+                purpose: "Концентрувати фокус уваги групи на ключових пріоритетах, виявити найвагоміші драйвери або перешкоди, відкинувши інформаційний шум.",
+                tips: "Коли учасники фіксують ТОП-3, вони змушені аналізувати значущість варіантів. Фасилітатор може легко об'єднати результати всіх індивідуальних ТОП-3 списків в один зведений рейтинг за частотою згадувань."
+            },
+            open: {
+                title: "Відкрите запитання",
+                recommended: "За потребою для глибини (мінімум 1)",
+                criteria: "Запитання, яке виключає можливість односкладної відповіді та стимулює розгорнуте пояснення.",
+                example: "«Які ресурси ти готовий надати?»",
+                purpose: "Зібрати якісну аналітику, почути унікальний досвід, глибинні побоювання, приховані мотиви та креативні пропозиції респондентів.",
+                tips: "Слідкуйте, щоб учасники починали відкрите запитання зі слів «Що», «Як» або «За яких умов». Запобігайте замаскованим навідним запитанням на кшталт «Чи не думаєте ви, що...», які насправді програмують відповідь."
+            },
+            closed: {
+                title: "Закрите запитання",
+                recommended: "1 запитання для валідації",
+                criteria: "Запитання з однозначним, фіксованим вибором відповіді: ТАК або НІ.",
+                example: "«Чи готовий ти особисто виділяти 2 години на тиждень на цей проект?»",
+                purpose: "Швидко зафіксувати фінальне рішення, готовність діяти, перевірити гіпотезу або підтвердити згоду групи з певним твердженням.",
+                tips: "Закриті питання — це ідеальний інструмент переходу від етапу обговорення до етапу взяття персональної відповідальності та планування конкретних кроків. Вони мінімізують простір для розмитих обіцянок."
+            }
+        };
+
+        // Current Active State
+        let currentScenario = 'classic';
+        let currentStep = 1;
+        let currentVizType = 'ray';
+
+        // UI Manipulation Functions
+        function renderTimingGrid() {
+            const grid = document.getElementById('timing-grid');
+            grid.innerHTML = '';
+            
+            scenarios[currentScenario].timing.forEach((t, index) => {
+                const card = document.createElement('div');
+                card.className = `p-3 rounded-lg border ${t.active ? 'bg-white border-slate-200 shadow-sm' : 'bg-slate-100 border-slate-200 text-slate-400'} flex flex-col justify-between h-20`;
+                card.innerHTML = `
+                    <span class="text-[10px] font-bold text-slate-400 block uppercase">${t.label}</span>
+                    <span class="text-sm font-semibold text-brand-900 mt-1">${t.time}</span>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function updateChecklistProgress() {
+            const checkboxes = document.querySelectorAll('.checklist-checkbox');
+            const checkedCount = Array.from(checkboxes).filter(c => c.checked).length;
+            const totalCount = checkboxes.length;
+            
+            // Update Text Counter
+            document.getElementById('checklist-counter').innerText = `Виконано: ${checkedCount} з ${totalCount}`;
+            
+            // Update Progress Bar
+            const percent = (checkedCount / totalCount) * 100;
+            document.getElementById('checklist-progress').style.width = `${percent}%`;
+        }
+
+        function switchScenario(scKey) {
+            currentScenario = scKey;
+            
+            // Update buttons active classes
+            ['express', 'classic', 'deep'].forEach(k => {
+                const btn = document.getElementById(`btn-${k}`);
+                if(k === scKey) {
+                    btn.className = "flex-1 sm:flex-none text-xs font-medium px-4 py-2 rounded-md transition-colors bg-brand-600 text-white shadow-sm";
+                } else {
+                    btn.className = "flex-1 sm:flex-none text-xs font-medium px-4 py-2 rounded-md transition-colors text-slate-600 hover:text-slate-900";
+                }
+            });
+
+            // Update times in the navigation labels
+            const stepTimes = {
+                express: ["5 хв", "7 хв", "10 хв", "10 хв", "10 хв"],
+                classic: ["10 хв", "15 хв", "20 хв", "20 хв", "15 хв"],
+                deep: ["20 хв", "25 хв", "35 хв", "25 хв", "20 хв"]
+            };
+
+            [1, 2, 3, 4, 5].forEach(i => {
+                document.getElementById(`step-time-nav-${i}`).innerText = `${stepTimes[scKey][i-1]} • ${getStepSublabel(i)}`;
+            });
+
+            renderTimingGrid();
+            selectStep(currentStep);
+        }
+
+        function getStepSublabel(index) {
+            switch(index) {
+                case 1: return "Організація груп";
+                case 2: return "Створення питань";
+                case 3: return "Збір та інтерв'ю";
+                case 4: return "Оформлення плакатів";
+                case 5: return "Прийняття рішень";
+                default: return "";
+            }
+        }
+
+        function selectStep(stepIdx) {
+            currentStep = stepIdx;
+            
+            // Update left navigation classes
+            [1,2,3,4,5].forEach(i => {
+                const navBtn = document.getElementById(`step-nav-${i}`);
+                const numIcon = navBtn.querySelector('span');
+                if(i === stepIdx) {
+                    navBtn.className = "w-full text-left p-4 rounded-xl border border-brand-200 bg-brand-50 hover:border-brand-300 transition-all shadow-sm flex items-start gap-3 step-active";
+                    numIcon.className = "w-6 h-6 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5";
+                } else {
+                    navBtn.className = "w-full text-left p-4 rounded-xl border border-slate-200 bg-white hover:border-slate-300 transition-all shadow-sm flex items-start gap-3";
+                    numIcon.className = "w-6 h-6 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5";
+                }
+            });
+
+            // Update content area
+            const stepData = scenarios[currentScenario].steps[stepIdx];
+            const container = document.getElementById('details-container');
+            
+            let todoHtml = '';
+            stepData.fac_todo.forEach(todo => {
+                todoHtml += `
+                    <li class="flex gap-3 items-start text-sm sm:text-base text-slate-600 leading-relaxed">
+                        <span class="w-5 h-5 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">✓</span>
+                        <span>${todo}</span>
+                    </li>
+                `;
+            });
+
+            let attentionHtml = '';
+            stepData.attention_points.forEach(point => {
+                attentionHtml += `
+                    <li class="flex gap-3 items-start text-sm text-amber-800 leading-relaxed">
+                        <span class="w-1.5 h-1.5 rounded-full bg-amber-500 shrink-0 mt-2"></span>
+                        <span>${point}</span>
+                    </li>
+                `;
+            });
+
+            container.innerHTML = `
+                <div class="flex flex-col sm:flex-row justify-between items-start gap-4 border-b pb-4">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-brand-600">Крок ${stepIdx} із 5</span>
+                        <h3 class="text-xl font-bold text-slate-900 mt-1">${stepData.title}</h3>
+                    </div>
+                    <span class="bg-brand-100 text-brand-800 text-xs font-bold px-3 py-1.5 rounded-full whitespace-nowrap">
+                        Час: ${stepData.timing}
+                    </span>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="font-bold text-slate-900 flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                        </svg>
+                        Дії фасилітатора:
+                    </h4>
+                    <ul class="space-y-3 pl-1">
+                        ${todoHtml}
+                    </ul>
+                </div>
+
+                <div class="bg-amber-50 border-l-4 border-amber-500 rounded-r-lg p-4 space-y-2">
+                    <h4 class="font-bold text-amber-950 text-sm flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-amber-600" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                        </svg>
+                        Зони ризику та фокус уваги (Червоні прапорці):
+                    </h4>
+                    <ul class="space-y-1.5 pl-1">
+                        ${attentionHtml}
+                    </ul>
+                </div>
+            `;
+        }
+
+        // Highly detailed question info card renderer with structured metrics
+        function showQuestionInfo(qKey) {
+            // Update active state in grid
+            ['scale', 'stat', 'priority', 'open', 'closed'].forEach(k => {
+                const btn = document.getElementById(`qbtn-${k}`);
+                if(k === qKey) {
+                    btn.className = "p-4 rounded-xl border-2 border-brand-600 bg-brand-50/50 text-left hover:border-brand-700 transition-all shadow-sm";
+                    const spanLabel = btn.querySelector('span:first-child');
+                    spanLabel.className = "text-xs font-semibold uppercase text-brand-700 block mb-1";
+                } else {
+                    btn.className = "p-4 rounded-xl border border-slate-200 text-left hover:border-slate-300 transition-all bg-white";
+                    const spanLabel = btn.querySelector('span:first-child');
+                    spanLabel.className = "text-xs font-semibold uppercase text-slate-500 block mb-1";
+                }
+            });
+
+            const qData = questionTypes[qKey];
+            const infoBox = document.getElementById('question-info-box');
+            
+            infoBox.innerHTML = `
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <div>
+                            <span class="text-xs font-bold uppercase text-brand-600 tracking-wider">Категорія методології</span>
+                            <h4 class="text-xl font-bold text-slate-900 mt-1">${qData.title}</h4>
+                        </div>
+                        
+                        <div class="bg-white border border-slate-200 rounded-xl p-4 space-y-3 shadow-sm">
+                            <div>
+                                <span class="text-[10px] font-bold text-slate-400 block uppercase tracking-wider">Рекомендована кількість у дослідженні:</span>
+                                <span class="text-sm font-semibold text-brand-900">${qData.recommended}</span>
+                            </div>
+                            <div class="pt-2 border-t border-slate-100">
+                                <span class="text-[10px] font-bold text-slate-400 block uppercase tracking-wider">Структурний критерій:</span>
+                                <p class="text-xs text-slate-600 mt-0.5">${qData.criteria}</p>
+                            </div>
+                            <div class="pt-2 border-t border-slate-100">
+                                <span class="text-[10px] font-bold text-slate-400 block uppercase tracking-wider">Приклад формулювання для команд:</span>
+                                <p class="text-sm italic text-slate-800 font-semibold mt-1 bg-slate-50 border border-slate-100 rounded-lg p-2.5">
+                                    ${qData.example}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-brand-50/20 rounded-xl p-5 border border-brand-100 flex flex-col justify-between space-y-4">
+                        <div>
+                            <span class="text-xs font-bold uppercase text-brand-700 tracking-wider block mb-1">Призначення інструменту:</span>
+                            <p class="text-sm text-slate-700 leading-relaxed">${qData.purpose}</p>
+                        </div>
+                        <div class="pt-4 border-t border-brand-100/50">
+                            <span class="text-xs font-bold uppercase text-brand-700 tracking-wider block mb-1">Методична підказка фасилітатору:</span>
+                            <p class="text-sm text-slate-700 leading-relaxed font-medium">${qData.tips}</p>
+                        </div>
+                        <div class="text-[10px] text-slate-400 pt-2 border-t border-slate-200/50">
+                            * Нагадайте командам: Кількість запитань у підготовленому опитувальнику має точно дорівнювати кількості учасників у групі.
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function showVizType(vKey) {
+            currentVizType = vKey;
+            
+            // Toggle active tabs class
+            const allKeys = ['ray', 'pie', 'bar', 'rank', 'cloud', 'cluster', 'proportion'];
+            allKeys.forEach(k => {
+                const btn = document.getElementById(`vbtn-${k}`);
+                if (k === vKey) {
+                    btn.className = "px-3.5 py-2 text-xs font-semibold rounded-lg border border-brand-200 bg-brand-50 text-brand-700 viz-active";
+                } else {
+                    btn.className = "px-3.5 py-2 text-xs font-semibold rounded-lg border border-slate-200 text-slate-600 hover:bg-slate-50";
+                }
+            });
+
+            // Update Content Box
+            const vData = visualizationBlueprints[vKey];
+            const container = document.getElementById('viz-content-container');
+            
+            container.innerHTML = `
+                <!-- Graphic Preview Panel (Left) -->
+                <div class="lg:col-span-5 flex flex-col justify-center bg-slate-100/50 border border-slate-200 p-4 rounded-xl min-h-[250px]">
+                    ${vData.html_preview}
+                </div>
+
+                <!-- Guidance & Script Panel (Right) -->
+                <div class="lg:col-span-7 space-y-4">
+                    <div>
+                        <span class="text-xs font-bold uppercase text-brand-600 tracking-wider">Макет візуалізації</span>
+                        <h3 class="text-xl font-bold text-slate-900 mt-1">${vData.title}</h3>
+                        <p class="text-sm text-slate-500">${vData.subtitle}</p>
+                    </div>
+
+                    <div class="space-y-3">
+                        <div>
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider block mb-1">Коли застосовувати:</span>
+                            <p class="text-sm text-slate-600 leading-relaxed">${vData.when_to_use}</p>
+                        </div>
+
+                        <div class="bg-white border border-slate-200/80 rounded-lg p-4">
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider block mb-1">Скрипт інструктажу (що сказати командам):</span>
+                            <p class="text-sm italic text-slate-700 font-medium leading-relaxed">${vData.instruction}</p>
+                        </div>
+
+                        <div class="border-l-4 border-brand-500 pl-3">
+                            <span class="text-xs font-bold text-brand-700 uppercase tracking-wider block">Порада фасилітатору щодо аналізу:</span>
+                            <p class="text-xs text-slate-600 leading-relaxed mt-0.5">${vData.tip}</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Initialization
+        window.onload = function() {
+            renderTimingGrid();
+            selectStep(1);
+            showQuestionInfo('scale');
+            showVizType('ray');
+            updateChecklistProgress();
+        };
+    </script>
+</body>
+</html>
